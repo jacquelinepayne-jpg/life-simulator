@@ -12,9 +12,9 @@ const Home: NextPage = () => {
           <ambientLight intensity={0.5} />
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
           <pointLight position={[-10, -10, -10]} />
-          <Html fullscreen position={[0, -2.5, 0]}>
+          <Html fullscreen position={[5.8, -2.5, 0]}>
             <div>
-              <h1>take a chance</h1>
+              <button className="chanceBtn" type="button">take a chance</button>
             </div>
           </Html>
           <Earth/>
