@@ -29,7 +29,7 @@ export function Earth(props: JSX.IntrinsicElements['group']) {
 
   return (
     <group {...props} dispose={null}>
-      <group rotation={[-Math.PI / 2, 0, 0]} position={[-1.7, -1.5, 0]} scale={1.75}>
+      <group rotation={[-Math.PI / 2, 0, 0]} position={[-1.75, -1.5, 0]} scale={1.75}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.moon} />
       </group>
     </group>
