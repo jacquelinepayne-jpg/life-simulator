@@ -25,13 +25,15 @@ a {
 }
 
 .chanceBtnContainer{
-  position: fixed;
-  width: 500px;
-  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
   top: 50%;
-  left: 50%;
-  margin-top: -100px;
-  margin-left: -225px;
+  transform: translateY(-50%);
+  margin: auto;
+  font-size: 60px;
+  text-align: center;
+  display: inline-block;
 }
 
 .chanceBtn{
