@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import Earth from '../components/Earth';
-import { Html} from '@react-three/drei';
+
 
 const Home: NextPage = () => {
 
@@ -12,11 +12,6 @@ const Home: NextPage = () => {
           <ambientLight intensity={0.5} />
           <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
           <pointLight position={[10, 10, -5]} />
-          <Html fullscreen >
-            <div className="chanceBtnContainer">
-              <button className="chanceBtn" type="button">take a chance</button>
-            </div>
-          </Html>
           <Earth/>
         </Canvas>
       </div>
