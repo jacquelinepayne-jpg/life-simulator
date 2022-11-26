@@ -6,9 +6,12 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { Html} from '@react-three/drei'
+import gsap from 'gsap'
+import { useRouter } from 'next/router'
 
 export function Earth(props) {
   const { nodes, materials } = useGLTF('earth/earth.gltf')
+  const router = useRouter()
 
   const mesh = useRef()
   useFrame(({ clock }) => { 
@@ -16,7 +19,16 @@ export function Earth(props) {
   }) 
 
   function handleClick(){
-    mesh.current.position.z -= 0.1
+    gsap.to(mesh.current.position, {
+      z: 2.3,
+      duration: 10,
+      ease: "sine"
+    })
+    
+    setTimeout(() => {
+      router.push("about")
+    }, 9000)
+    
   }
   return (
     
@@ -27,7 +39,7 @@ export function Earth(props) {
             <div className="chanceBtnContainer">
               <button className="chanceBtn" type="button" onClick={handleClick}>take a chance</button>
             </div>
-          </Html>
+         </Html>
       </group>
     </group>
   )

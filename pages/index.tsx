@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { Canvas } from '@react-three/fiber';
 import Earth from '../components/Earth';
 
 
