@@ -50,3 +50,20 @@ a {
   text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
   cursor: pointer;
 }
+
+.about-header{
+  display: flex;
+
+  /*this centers the text horizontally*/
+  justify-content: center;
+
+  /*this centers the text vertically*/
+  align-items: center;
+
+  height: 100vh;
+  padding: 15%;
+
+  text-align: center;
+
+  font-size: 1.5rem;
+}
